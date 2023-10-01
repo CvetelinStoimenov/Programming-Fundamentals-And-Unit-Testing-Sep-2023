@@ -1,4 +1,22 @@
-﻿int num1 = int.Parse(Console.ReadLine());
+﻿/*
+3.	Biggest of Five Numbers
+Write a program to find the biggest among 5 numbers:
+
+•	Reads 5 integer numbers from the console
+•	Print the biggest number from the given five
+
+Note: There will not be equal numbers given.
+
+Example Input / Output
+Input	Output		Input	Output
+1       5           10      50  
+2                   20
+3                   30
+4                   40
+5                   50
+*/
+
+int num1 = int.Parse(Console.ReadLine());
 int num2 = int.Parse(Console.ReadLine());
 int num3 = int.Parse(Console.ReadLine());
 int num4 = int.Parse(Console.ReadLine());
