@@ -39,6 +39,8 @@ if (season == "Spring")
     {
         cost = 30 * days;
         cost = cost - (cost * 0.2);
+        //cost = days * 30 * (1-0.20);
+        //cost = days * 30 * 0.80;
     }
     else 
     {

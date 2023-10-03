@@ -21,11 +21,9 @@ int num2 = int.Parse(Console.ReadLine());
 int num3 = int.Parse(Console.ReadLine());
 
 int sum = num1 + num2 + num3;
-int min = 0;
-int sec = 0;
+int min = sum / 60;
+int sec = sum % 60;
 
-min = sum / 60;
-sec = sum % 60;
 
 if (sec < 10)
 {
