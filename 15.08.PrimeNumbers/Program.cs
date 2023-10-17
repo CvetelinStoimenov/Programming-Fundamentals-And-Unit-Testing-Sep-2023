@@ -17,7 +17,6 @@ Input	Output
  */
 int rangeStart = int.Parse(Console.ReadLine());
 int rangeEnd = int.Parse(Console.ReadLine());
-//bool isPrime = false;
 
 for (int number = rangeStart; number <= rangeEnd; number++)
 {
