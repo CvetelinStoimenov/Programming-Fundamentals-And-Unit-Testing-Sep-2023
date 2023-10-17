@@ -251,6 +251,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17.07.FactorialDivision", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17.08.MultiplicationSign", "17.08.MultiplicationSign\17.08.MultiplicationSign.csproj", "{13E30678-4B5A-4342-8BBF-0824A5F280A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17.09.PasswordValidator", "17.09.PasswordValidator\17.09.PasswordValidator.csproj", "{191A1B74-572E-4160-A05B-60AB5A48E56D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -689,6 +691,10 @@ Global
 		{13E30678-4B5A-4342-8BBF-0824A5F280A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13E30678-4B5A-4342-8BBF-0824A5F280A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13E30678-4B5A-4342-8BBF-0824A5F280A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{191A1B74-572E-4160-A05B-60AB5A48E56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{191A1B74-572E-4160-A05B-60AB5A48E56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{191A1B74-572E-4160-A05B-60AB5A48E56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{191A1B74-572E-4160-A05B-60AB5A48E56D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -802,6 +808,7 @@ Global
 		{F046C377-1DAB-4FF3-A6E4-762A0556D643} = {4EEFD3FE-079A-4AFC-AA33-0A9702033ACE}
 		{CEBE8A13-8BB4-4622-8549-C9E7DA8DC8B3} = {4EEFD3FE-079A-4AFC-AA33-0A9702033ACE}
 		{13E30678-4B5A-4342-8BBF-0824A5F280A8} = {4EEFD3FE-079A-4AFC-AA33-0A9702033ACE}
+		{191A1B74-572E-4160-A05B-60AB5A48E56D} = {4EEFD3FE-079A-4AFC-AA33-0A9702033ACE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3EB88972-AA20-4BC9-A4BA-9686947244D3}
