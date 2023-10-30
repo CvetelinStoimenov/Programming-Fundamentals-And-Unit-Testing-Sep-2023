@@ -1,4 +1,4 @@
-using NUnit.Framework;
+ using NUnit.Framework;
 
 using System;
 
@@ -19,14 +19,15 @@ public class ReverseTests
         Assert.That(result, Is.EqualTo(string.Empty));
     }
 
-    // TODO: finish the test
+
     [Test]
     public void Test_ReverseArray_InputHasOneElement_ShouldReturnTheSameElement()
     {
         // Arrange
+        int[] oneElementArray = new int [1] { 42 };
 
         // Act
-        string result;
+        string result = Reverse.ReverseArray(oneElementArray);
 
         // Assert
         Assert.That(result, Is.EqualTo("42"));
@@ -35,6 +36,13 @@ public class ReverseTests
     [Test]
     public void Test_ReverseArray_InputHasMultipleElements_ShouldReturnReversedString()
     {
-        // TODO: finish the test
+        // Arrange
+        int[] multipleElementsArray = new int[5] { 24, 45, 52, 4, 8 };
+
+        //Act
+        string result = Reverse.ReverseArray(multipleElementsArray);
+
+        //Assert
+        Assert.That(result, Is.EqualTo("8 4 52 45 24"));
     }
 }

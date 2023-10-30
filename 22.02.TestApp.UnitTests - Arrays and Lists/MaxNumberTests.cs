@@ -13,6 +13,7 @@ public class MaxNumberTests
         List<int>? nullList = null;
 
         // Act & Assert
+        Assert.That(() => MaxNumber.FindMax(nullList), Throws.ArgumentException);
     }
 
     [Test]
@@ -22,35 +23,86 @@ public class MaxNumberTests
         List<int> emptyList = new();
 
         // Act & Assert
+        Assert.That(() => MaxNumber.FindMax(emptyList), Throws.ArgumentException);
     }
 
     [Test]
     public void Test_FindMax_InputHasOneElement_ShouldReturnTheElement()
     {
-        // TODO: finish test
+        // Arrange
+        List<int> oneElementList = new List<int>() { 5 };
+
+        // Act
+        int result = MaxNumber.FindMax(oneElementList);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(5));
+
     }
 
     [Test]
     public void Test_FindMax_InputHasPositiveIntegers_ShouldReturnMaximum()
     {
-        // TODO: finish test
+        // Arrange
+        List<int> positiveList = new List<int>() { 1, 5, 8, 2, 4, 11, 50 };
+
+        // Act
+        int result = MaxNumber.FindMax(positiveList);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(50));
+
     }
 
     [Test]
     public void Test_FindMax_InputHasNegativeIntegers_ShouldReturnMaximum()
     {
-        // TODO: finish test
+        // Arrange
+        List<int> negativeNumsList = new List<int>() { -1, -5, -8, -2, -4, -11, -50 };
+
+        // Act
+        int result = MaxNumber.FindMax(negativeNumsList);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(-1));
     }
 
     [Test]
     public void Test_FindMax_InputHasMixedIntegers_ShouldReturnMaximum()
     {
-        // TODO: finish test
+        // Arrange
+        List<int> mixedNumsList = new List<int>() { -1, 5, -8, -2, 4, -11, -50 };
+
+        // Act
+        int result = MaxNumber.FindMax(mixedNumsList);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(5));
     }
 
     [Test]
     public void Test_FindMax_InputHasDuplicateMaxValue_ShouldReturnMaximum()
     {
-        // TODO: finish test
+        // Arrange
+        List<int> DublicateMaxNumList = new List<int>() { 1, 5, 8, 2, 4, 11, 50, 60, 80, 3, 7, 80 };
+
+        // Act
+        int result = MaxNumber.FindMax(DublicateMaxNumList);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(80));
+    }
+
+    [Test]
+    public void Test_FindMax_InputHasDuplicateNumsValue_ShouldReturnMaximum()
+    {
+        // Arrange
+        List<int> DublicateMaxNumList = new List<int>() { 11, 4, 8, 2, 4, 11, 50, 60, 80, 3, 7, 80 };
+
+        // Act
+        int result = MaxNumber.FindMax(DublicateMaxNumList);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(80));
     }
 }
