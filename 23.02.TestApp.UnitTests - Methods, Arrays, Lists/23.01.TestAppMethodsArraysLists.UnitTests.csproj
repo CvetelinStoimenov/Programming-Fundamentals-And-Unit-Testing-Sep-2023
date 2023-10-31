@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\23.01.TestApp - Methods, Arrays, Lists\23.01.TestApp - Methods, Arrays, Lists.csproj" />
+    <ProjectReference Include="..\23.01.TestApp - Methods, Arrays, Lists\23.01.TestAppMethodsArraysLists.csproj" />
   </ItemGroup>
 
 </Project>

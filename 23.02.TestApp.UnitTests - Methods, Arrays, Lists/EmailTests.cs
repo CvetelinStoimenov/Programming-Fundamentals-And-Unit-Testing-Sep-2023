@@ -4,7 +4,6 @@ namespace TestApp.UnitTests;
 
 public class EmailTests
 {
-    // TODO: finish test
     [Test]
     public void Test_IsValidEmail_ValidEmail()
     {
@@ -12,19 +11,35 @@ public class EmailTests
         string validEmail = "test@example.com";
 
         // Act
+        bool isValidEmail = Email.IsValidEmail(validEmail);
 
         // Assert
+        Assert.AreEqual(true, isValidEmail);
     }
 
     [Test]
     public void Test_IsValidEmail_InvalidEmail()
     {
-        // TODO: finish test
+        // Arrange
+        string validEmail = "test.example.com";
+
+        // Act
+        bool isValidEmail = Email.IsValidEmail(validEmail);
+
+        // Assert
+        Assert.AreEqual(false, isValidEmail);
     }
 
     [Test]
     public void Test_IsValidEmail_NullInput()
     {
-        // TODO: finish test
+        // Arrange
+        string? validEmail = null;
+
+        // Act
+        bool isValidEmail = Email.IsValidEmail(validEmail);
+
+        // Assert
+        Assert.AreEqual(false, isValidEmail);
     }
 }
