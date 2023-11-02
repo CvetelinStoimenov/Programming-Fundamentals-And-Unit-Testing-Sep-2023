@@ -6,7 +6,6 @@ namespace TestApp.UnitTests;
 
 public class FakeTests
 {
-    // TODO: finish test
     [Test]
     public void Test_RemoveStringNumbers_NullInput_ThrowsException()
     {
@@ -14,23 +13,48 @@ public class FakeTests
         char[]? input = null;
 
         // Act + Assert
+        Assert.That(() => Fake.RemoveStringNumbers(input), Throws.ArgumentException);
     }
 
     [Test]
     public void Test_RemoveStringNumbers_RemovesDigitsFromCharArray()
     {
-        // TODO: finish test
+        // Arrange
+        char[] input = { 'a', '1', 'c', '4', 'd', '6', 'g' };
+
+        // Act
+        char[] result = Fake.RemoveStringNumbers(input);
+
+        // Assert
+        char[] assertResult = { 'a', 'c', 'd', 'g' };
+        Assert.AreEqual(assertResult, result);
     }
 
     [Test]
     public void Test_RemoveStringNumbers_NoDigitsInInput_ReturnsSameArray()
     {
-        // TODO: finish test
+        // Arrange
+        char[] input = { 'a', 'c', 'd', 'g' };
+
+        // Act
+        char[] result = Fake.RemoveStringNumbers(input);
+
+        // Assert
+        char[] assertResult = { 'a', 'c', 'd', 'g' };
+        Assert.AreEqual(assertResult, result);
     }
 
     [Test]
     public void Test_RemoveStringNumbers_EmptyArray_ReturnsEmptyArray()
     {
-        // TODO: finish test
+        // Arrange
+        char[] input = { };
+
+        // Act
+        char[] result = Fake.RemoveStringNumbers(input);
+
+        // Assert
+        char[] assertResult = {  };
+        Assert.AreEqual(result, assertResult);
     }
 }

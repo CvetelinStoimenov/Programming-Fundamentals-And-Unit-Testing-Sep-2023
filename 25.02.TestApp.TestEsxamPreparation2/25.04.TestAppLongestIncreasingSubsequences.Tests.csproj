@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\26.02.TestAppEsxamPreparation3\26.02.TestAppDrumSet.csproj" />
+    <ProjectReference Include="..\25.02.TestAppExamPreparation2\25.04.TestAppLongestIncreasingSubsequences.csproj" />
   </ItemGroup>
 
 </Project>

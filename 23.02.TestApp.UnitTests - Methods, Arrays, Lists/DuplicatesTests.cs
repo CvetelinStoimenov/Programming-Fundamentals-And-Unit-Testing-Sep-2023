@@ -6,7 +6,6 @@ namespace TestApp.UnitTests;
 
 public class DuplicatesTests
 {
-    // TODO: finish test
     [Test]
     public void Test_RemoveDuplicates_EmptyArray_ReturnsEmptyArray()
     {

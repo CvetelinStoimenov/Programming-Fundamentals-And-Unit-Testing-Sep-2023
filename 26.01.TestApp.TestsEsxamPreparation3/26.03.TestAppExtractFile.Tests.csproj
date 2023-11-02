@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\24.01.TestAppExamPreparation1\24.01.TestAppCenterPoint.csproj" />
+    <ProjectReference Include="..\26.01.TestAppEsxamPreparation3\26.03.TestAppExtractFile.csproj" />
   </ItemGroup>
 
 </Project>

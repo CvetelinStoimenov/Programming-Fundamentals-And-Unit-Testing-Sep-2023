@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\25.01.TestAppExamPreparation2\25.01.TestAppPascalTriangle.csproj" />
+    <ProjectReference Include="..\24.03.TestAppExamPreparation1\24.04.TestAppFoldSum.csproj" />
   </ItemGroup>
 
 </Project>

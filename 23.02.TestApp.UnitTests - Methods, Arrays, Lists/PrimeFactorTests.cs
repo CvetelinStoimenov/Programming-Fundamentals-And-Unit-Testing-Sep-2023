@@ -32,12 +32,12 @@ public class PrimeFactorTests
     public void Test_FindLargestPrimeFactor_LargeNumber()
     {
         // Arrange
-        long n = 600851475143;
+        long n = 9223372036854775807;
 
         // Act
         long result = PrimeFactor.FindLargestPrimeFactor(n);
 
         // Assert
-        Assert.AreEqual(6857, result);
+        Assert.AreEqual(649657, result);
     }
 }
