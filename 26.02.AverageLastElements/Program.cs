@@ -16,3 +16,16 @@ Input	                    Output	    Comments
 12 34 98 42 65 12           39.67       Last 3 numbers in the array are: 42 65 12
 3                                       Average value is: (42 + 65 + 12) / 3 = 39.67*/
 
+int[] arr = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
+int cutList = int.Parse(Console.ReadLine());
+double sum = 0;
+
+int[] lastNElements = arr.TakeLast(cutList).ToArray();
+
+for (int i = 0; i < lastNElements.Length; i++)
+{
+    sum += lastNElements[i];
+}
+
+
+Console.WriteLine($"{sum / cutList:f2}");
