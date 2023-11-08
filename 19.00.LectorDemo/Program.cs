@@ -1,7 +1,7 @@
 ﻿//3, 45, 67, 89
 List<int> numbers = new List<int>();
 //празен лист
-
+// 
 //добавяне на елементи
 numbers.Add(3);
 numbers.Add(45);
